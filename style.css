@@ -6,14 +6,16 @@ body {
   transition: 0.3s ease;
 }
 
-/* Light Mode (افتراضي) */
-.hero {
-  min-height: 100vh;
-  background: #f8f9fa;
-  color: #000;   /* النص أسود */
+/* Smooth transition global */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
 
 /* Hero image */
 .hero-img {
@@ -42,27 +44,39 @@ html {
   font-weight: bold;
 }
 
-/* DARK MODE ONLY */
+/* =========================
+   DARK MODE SYSTEM
+========================= */
+
 .dark {
   background-color: #111 !important;
   color: #fff !important;
 }
 
-/* Dark Mode */
-.dark .hero {
-  background: #111 !important;
+/* Sections dark fix */
+.dark section {
+  background-color: #111 !important;
   color: #fff !important;
 }
 
+/* Hero */
+.dark .hero {
+  background-color: #111 !important;
+  color: #fff !important;
+}
+
+/* Cards */
 .dark .card {
   background-color: #1e1e1e !important;
   color: #fff !important;
 }
 
+/* Navbar */
 .dark .navbar {
   background-color: #000 !important;
 }
 
+/* Links */
 .dark .nav-link {
   color: #fff !important;
 }
@@ -71,11 +85,30 @@ html {
   color: #ffc107 !important;
 }
 
+/* About */
 #about {
   background-color: #ffffff;
   color: #000;
 }
+
 .dark #about {
   background-color: #111 !important;
+  color: #fff !important;
+}
+
+/* Skills */
+.dark #skills {
+  background-color: #111 !important;
+  color: #fff !important;
+}
+
+/* Services */
+.dark #services {
+  background-color: #111 !important;
+  color: #fff !important;
+}
+
+.dark #services .bg-white {
+  background-color: #1e1e1e !important;
   color: #fff !important;
 }
