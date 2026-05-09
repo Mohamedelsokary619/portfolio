@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+  transition: 0.3s ease;
+}
+
+/* Light Mode (افتراضي) */
+.hero {
+  min-height: 100vh;
+  background: #f8f9fa;
+  color: #000;   /* النص أسود */
+}
+
+
+
+/* Hero image */
+.hero-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Cards */
+.card {
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Active nav */
+.nav-link.active {
+  color: #ffc107 !important;
+  font-weight: bold;
+}
+
+/* DARK MODE ONLY */
+.dark {
+  background-color: #111 !important;
+  color: #fff !important;
+}
+
+/* Dark Mode */
+.dark .hero {
+  background: #111 !important;
+  color: #fff !important;
+}
+
+.dark .card {
+  background-color: #1e1e1e !important;
+  color: #fff !important;
+}
+
+.dark .navbar {
+  background-color: #000 !important;
+}
+
+.dark .nav-link {
+  color: #fff !important;
+}
+
+.dark .nav-link.active {
+  color: #ffc107 !important;
+}
+
+#about {
+  background-color: #ffffff;
+  color: #000;
+}
+.dark #about {
+  background-color: #111 !important;
+  color: #fff !important;
+}
